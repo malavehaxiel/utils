@@ -1,0 +1,30 @@
+{
+    "name": "malavehaxiel/utils",
+    "description": "utilities to frontend",
+    "type": "library",
+    "require": {
+        "laravelcollective/html": "^6.0"
+    },
+    "authors": [
+        {
+            "name": "Haxiel Malave",
+            "email": "malavehaxiel96@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+		"psr-4": {
+			"MalaveHaxiel\\Utils\\": "/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MalaveHaxiel\\Utils\\UtilsServiceProvider"
+            ],
+            "aliases": {
+                "Utils": "MalaveHaxiel\\Utils\\Facades\\Utils"
+            }
+        }
+    }
+}
